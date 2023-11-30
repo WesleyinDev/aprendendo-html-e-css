@@ -2,20 +2,27 @@
 <html lang="pt-BR">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport">
         <title>Dev Wesley</title> 
 
         <style>
+            body{
+                background-image: url(https://images.alphacoders.com/133/1330482.png);
+                background-size: cover;
+                margin: 0;
+
+            }
             .t1 {
                 background: rgb(32,178,170);
             }
             .tx {
-                background: rgb(32,178,170);
+                background: rgb(0,0,205);
             }
             .tx1 {
-                color: blueviolet;
+                color: rgb(176,224,230)
             }
             .tx2 {
-                color: rgb(32,178,170);
+                color: rgb(255,255,255);
             }
             .img-txt1 {
                 width: 15px;
@@ -37,6 +44,8 @@
                 text-align:center;
                 font-size: 25px;
                 font-family:'Times New Roman', Times, serif;
+                background-color:rgba(255, 255, 255, 0.2);
+                margin: 50px
             }
             .art {
                 text-align:center;
@@ -50,17 +59,50 @@
                 font-style:oblique;
             }
             .rodape {
-                color: rgb(0,0,205);
+                width: 100%;
+                height: 50px;
+                background-color: #bb3a4e;
                 font-style: italic;
                 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
                 text-align:center;
                 font-size: 13px;
+                margin: 0;
             }
             .center1 {
                 text-align:center;
+                font-size: 25px;
+                font-family:'Times New Roman', Times, serif;
+                color:#fff;
+            }
+            #center{
+                text-align:center;
                 font-size: 15px;
                 font-family:'Times New Roman', Times, serif;
+                
             }    
+            .center a {
+                text-align: center;
+                color: rgb(32,178,170);
+                text-transform: uppercase;
+                font-size: 20px;
+                text-decoration: none;   
+            }
+            .center1 a {
+                text-align: center;
+                color: rgb(32,178,170);
+                text-transform: uppercase;
+                font-size: 20px;
+                text-decoration: none;
+            }    
+            .bk {
+                background-color:rgba(255, 255, 255, 0.2);
+                background-size:cover;
+                margin:4%;  
+            }
+            .tx2 a {
+                text-decoration:none;
+                color: red;
+            }
         </style>    
     </head>
 </html>
@@ -73,7 +115,7 @@
             <h4>Artigos:</h4>
             <a href="#">28/11/23|</a>
             <a href="#">29/11/23|</a>
-            <a href="#">28/11/23|</a>
+            <a href="#">30/11/23|</a>
             <a href="#">28/11/23|</a>
             <a href="#">28/11/23|</a>
             </ul>
@@ -81,19 +123,22 @@
     </aside>
     </div>                    
     <header class="center">
-        <h1 class="tx2">Seja bem vindo ao meu primeiro site</h1> 
-        <h2 class="tx2">Documentando minha evolução em html</h2>
+        <hr size="5" noshade>
+        <h1 class="tx2">Seja bem-vindo ao meu primeiro site</h1> 
+        <h2 class="tx2">Documentando minha evolução em HTML e CSS</h2>
         <h3>   
-          <a href="http://127.0.0.1:5500/codigo1.html">Página inicial</a>
-          <a href="https://github.com/WesleyinDev" target="_blank">Meu git hub</a></li>
-          <a href="https://www.linkedin.com/in/wesley-vieira-b416b1223/" target="_blank">Meu linkedin</a>
-        </h3>
-        <hr size="5" noshade>    
+          <a href="http://127.0.0.1:5500/codigo1.html">| Página inicial |</a>
+          <a href="https://github.com/WesleyinDev" target="_blank">| Meu git hub |</a></li>
+          <a href="https://www.linkedin.com/in/wesley-vieira-b416b1223/" target="_blank">| Meu linkedin |</a>
+        </h3>   
     <p class="tx2">Aqui, irei <b class="tx1">adicionar todos meus novos aprendizados,</b> atualizando sempre o site e <b class="tx1">não começando um novo.</b><br>
         e consequentimente seu versionamento estará disponivel no github para ver a evolução deste. </p>
-    <hr size="5" noshade>
+    
+        <hr size="5" noshade>
+
     </header>
-    <header>
+    <header class="bk">
+        <hr size="5" noshade>
       <article class="art">
         <h2 class="tx2"><i>Atualizações de aprendizado:</i></h2> 
        <p class="tx2"> <b class="tx1">28/11/23:</b> aprendizados: <s>tags</s> (<u>inline</u>), indetificadores<sup>(id e class)</sup>, diferentes titulos <sub>(h1, h2, h3, h4, h5, h6)</sub> e um pouco sobre stylus (color,background e como atribuir a class e a id a esses paramentors),
@@ -104,17 +149,28 @@
      <hr size="5" noshade>
     
      <article class="art2">
-       <p class="tx2"><b class="tx1">28/11/23:</b> Aprendizados de hoje: Criar um tipo de "menu" dentro da tag "header". algo bem simples mesmo. e a organizar melhor um pouco meu codigo justamente com atag "header"<br>Aprendi também a centralizar testo utilizando o "text-align" ou uma imagem usando a "div".<br> Criação de class com, text-family, fonte-size, font-style. Por hoje foi só, estou muito casado do trabalho para estudar mais.
+       <p class="tx2"><b class="tx1">29/11/23:</b> Aprendizados de hoje: Criar um tipo de "menu" dentro da tag "header". algo bem simples mesmo. e a organizar melhor um pouco meu codigo justamente com atag "header"<br>Aprendi também a centralizar testo utilizando o "text-align" ou uma imagem usando a "div".<br> Criação de class com, text-family, fonte-size, font-style. Por hoje foi só, estou muito casado do trabalho para estudar mais.
       </p>
      </article>
-    </header> 
-</article>
+    
+     <hr size="5" noshade>
 
+     <article class="art2">
+        <p class="tx2"><b class="tx1">30/11/23:</b> Aprendizados de hoje: Métodologia na criação de sites usando a div. ou seja, foi me instruido que a forma de criar site é pela estruturas de bloco com div.<br>Melhor utilização das tags em geral, e aplicação de novas funcionalidades as minhas class e id.<br>
+            Aprendi também a colocar um background na pagina, seja em cor ou em imagem.<br>
+            Aprendi a aplicar cor com opacidade (rgba) muito bom e util por sinal.
+        </p>
+        
+        <hr size="5" noshade>
+     </article>     
+    </header> 
+
+</main> 
 </body>
-</main>    
+   
 
 <div class="rodape">
-    <hr size="8" noshade>
+<hr size="8" noshade>
  <footer> Este site é meu projeto, e esta sendo atualizado constatimente com o que eu aprendo de novo <br> Todos os direitos reservados</footer>   
 </div> 
 
