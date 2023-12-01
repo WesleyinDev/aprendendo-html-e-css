@@ -8,21 +8,36 @@
         <style>
             body{
                 background-image: url(https://images.alphacoders.com/133/1330482.png);
-                background-size: cover;
+                background-size:cover;
+                background-attachment: fixed;
                 margin: 0;
-
             }
-            .t1 {
-                background: rgb(32,178,170);
+            .main {
+                text-align:center;
+                color:white;
+                font-size: 20px;
+                font-family:'Times New Roman', Times, serif;
+                background-color:rgba(0, 0, 0, 0.5);
+                margin-top: 0px;
+                margin-bottom: 0px;
+                margin-left: 150px;
+                margin-right: 150px;
+                border-style:ridge;
+                border-width: 8px;
+                border-bottom-color: rgb(0,0,255);
+                border-left-color: rgb(0,255,255);
+                border-right-color: rgb(0,250,154);
+                border-top-color: rgb(255,0,255);
+                padding: 25px;
             }
-            .tx {
-                background: rgb(0,0,205);
-            }
+            .art {
+                text-align: center;
+                font-size: 15px;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-style:oblique;
+            }    
             .tx1 {
-                color: rgb(176,224,230)
-            }
-            .tx2 {
-                color: rgb(255,255,255);
+                color: rgb(176,224,230);
             }
             .img-txt1 {
                 width: 15px;
@@ -40,24 +55,6 @@
                 font-size: 20px;
                 color: green;
             }
-            .center {
-                text-align:center;
-                font-size: 25px;
-                font-family:'Times New Roman', Times, serif;
-                background-color:rgba(255, 255, 255, 0.2);
-                margin: 50px
-            }
-            .art {
-                text-align:center;
-                font-size: 15px;
-
-            }
-            .art2 {
-                text-align: center;
-                font-size: 15px;
-                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-                font-style:oblique;
-            }
             .rodape {
                 width: 100%;
                 height: 50px;
@@ -68,36 +65,12 @@
                 font-size: 13px;
                 margin: 0;
             }
-            .center1 {
-                text-align:center;
-                font-size: 25px;
-                font-family:'Times New Roman', Times, serif;
-                color:#fff;
-            }
-            #center{
-                text-align:center;
-                font-size: 15px;
-                font-family:'Times New Roman', Times, serif;
-                
-            }    
-            .center a {
+            .main a {
                 text-align: center;
                 color: rgb(32,178,170);
                 text-transform: uppercase;
                 font-size: 20px;
                 text-decoration: none;   
-            }
-            .center1 a {
-                text-align: center;
-                color: rgb(32,178,170);
-                text-transform: uppercase;
-                font-size: 20px;
-                text-decoration: none;
-            }    
-            .bk {
-                background-color:rgba(255, 255, 255, 0.2);
-                background-size:cover;
-                margin:4%;  
             }
             .tx2 a {
                 text-decoration:none;
@@ -106,9 +79,8 @@
         </style>    
     </head>
 </html>
-
-<main>
 <body>
+    <main class="main">
     <aside class="center1">
         <nav>
             <ul>
@@ -122,47 +94,51 @@
         </nav>
     </aside>
     </div>                    
-    <header class="center">
+    <header>
         <hr size="5" noshade>
-        <h1 class="tx2">Seja bem-vindo ao meu primeiro site</h1> 
-        <h2 class="tx2">Documentando minha evolução em HTML e CSS</h2>
+        <h1>Seja bem-vindo ao meu primeiro site</h1> 
+        <h2>Documentando minha evolução em HTML e CSS</h2>
         <h3>   
           <a href="http://127.0.0.1:5500/codigo1.html">| Página inicial |</a>
           <a href="https://github.com/WesleyinDev" target="_blank">| Meu git hub |</a></li>
           <a href="https://www.linkedin.com/in/wesley-vieira-b416b1223/" target="_blank">| Meu linkedin |</a>
         </h3>   
-    <p class="tx2">Aqui, irei <b class="tx1">adicionar todos meus novos aprendizados,</b> atualizando sempre o site e <b class="tx1">não começando um novo.</b><br>
+    <p>Aqui, irei <b class="tx1">adicionar todos meus novos aprendizados,</b> atualizando sempre o site e <b class="tx1">não começando um novo.</b><br>
         e consequentimente seu versionamento estará disponivel no github para ver a evolução deste. </p>
-    
-        <hr size="5" noshade>
-
     </header>
-    <header class="bk">
+    
+    <header>
         <hr size="5" noshade>
       <article class="art">
-        <h2 class="tx2"><i>Atualizações de aprendizado:</i></h2> 
-       <p class="tx2"> <b class="tx1">28/11/23:</b> aprendizados: <s>tags</s> (<u>inline</u>), indetificadores<sup>(id e class)</sup>, diferentes titulos <sub>(h1, h2, h3, h4, h5, h6)</sub> e um pouco sobre stylus (color,background e como atribuir a class e a id a esses paramentors),
+        <h2 class=><i>Atualizações de aprendizado:</i></h2> 
+       <p class=> <b class="tx1">28/11/23:</b> aprendizados: <s>tags</s> (<u>inline</u>), indetificadores<sup>(id e class)</sup>, diferentes titulos <sub>(h1, h2, h3, h4, h5, h6)</sub> e um pouco sobre stylus (color,background e como atribuir a class e a id a esses paramentors),
        adição de style diretamente na tag, <a href="https://www.instagram.com/mrwesleyvieira/" target="_blank">adição de links ou arquivos, e suas "target", adição de imagem,<img class="img-txt1" src="https://ovicio.com.br/wp-content/uploads/2023/10/20231023-attack-on-titan-eren.jpg" alt="Eren, personagem de attack on titan"></a> links na imagem e alterar sua altura e largura.</p>
-       <blockquote class="tx2"> <span class="color1"> Realmente</span>, <span class="color2">é muita coisa para aprender,</span> <span class= "color3">acredito que impossivel,</span> aprender em 30 dias a programar full stack, na verdade, nem front muito menos back end.</blockquote>
+       <blockquote class="bloq"> <span class="color1"> Realmente</span>, <span class="color2">é muita coisa para aprender,</span> <span class= "color3">acredito que impossivel,</span> aprender em 30 dias a programar full stack, na verdade, nem front muito menos back end.</blockquote>
      </article>
 
      <hr size="5" noshade>
     
-     <article class="art2">
-       <p class="tx2"><b class="tx1">29/11/23:</b> Aprendizados de hoje: Criar um tipo de "menu" dentro da tag "header". algo bem simples mesmo. e a organizar melhor um pouco meu codigo justamente com atag "header"<br>Aprendi também a centralizar testo utilizando o "text-align" ou uma imagem usando a "div".<br> Criação de class com, text-family, fonte-size, font-style. Por hoje foi só, estou muito casado do trabalho para estudar mais.
+     <article class="art">
+       <p><b class="tx1">29/11/23:</b> Aprendizados de hoje: Criar um tipo de "menu" dentro da tag "header". algo bem simples mesmo. e a organizar melhor um pouco meu codigo justamente com atag "header"<br>Aprendi também a centralizar testo utilizando o "text-align" ou uma imagem usando a "div".<br> Criação de class com, text-family, fonte-size, font-style. Por hoje foi só, estou muito casado do trabalho para estudar mais.
       </p>
      </article>
     
      <hr size="5" noshade>
 
-     <article class="art2">
-        <p class="tx2"><b class="tx1">30/11/23:</b> Aprendizados de hoje: Métodologia na criação de sites usando a div. ou seja, foi me instruido que a forma de criar site é pela estruturas de bloco com div.<br>Melhor utilização das tags em geral, e aplicação de novas funcionalidades as minhas class e id.<br>
+     <article class="art">
+        <p><b class="tx1">30/11/23:</b> Aprendizados de hoje: Métodologia na criação de sites usando a div. ou seja, foi me instruido que a forma de criar site é pela estruturas de bloco com div.<br>Melhor utilização das tags em geral, e aplicação de novas funcionalidades as minhas class e id.<br>
             Aprendi também a colocar um background na pagina, seja em cor ou em imagem.<br>
             Aprendi a aplicar cor com opacidade (rgba) muito bom e util por sinal.
         </p>
         
         <hr size="5" noshade>
-     </article>     
+     </article>  
+     <article class="art">
+        <p><b class="tx1">01/12/23:</b> Hoje, comecei o dia atualizando o codigo do site, organizando melhor para facilitar o entendimento e as mudanças. Se observado no codigo anterior tinha muita coisa desnecessaria.<br>
+            Deste forma eu mesmo, consigo me localizar e entender melhor o que fiz neste projeto. Ao fim, dei introdução ao CSS com box-model. Com isso aprendi, a criar uma borda em volta do meu conteúdo, alterar o padding e afins.
+            No geral por hoje foi mais isso.
+        </p>   
+    </article>   
     </header> 
 
 </main> 
@@ -173,6 +149,3 @@
 <hr size="8" noshade>
  <footer> Este site é meu projeto, e esta sendo atualizado constatimente com o que eu aprendo de novo <br> Todos os direitos reservados</footer>   
 </div> 
-
-
-
