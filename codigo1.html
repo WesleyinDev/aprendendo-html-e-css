@@ -2,7 +2,6 @@
 <html lang="pt-BR">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport">
         <title>Dev Wesley</title> 
 
         <style>
@@ -126,7 +125,25 @@
             }
             .tabelinha{
                 max-width: 100%;
-                overflow-x: auto;
+                overflow-x:auto;
+            }
+            form { 
+                border: 5px ridge;
+                border-color: rgb(131,111,255);
+                background-color: rgba(211,211,211,0.5);
+                margin-top: 50px;
+                font-style: italic;
+                font-family: sans-serif;
+            }
+            .button {
+                width: 250px;
+                height: 50px;
+                background-color: white;
+                font-style: italic;
+                font-family: serif;
+                border: 2px solid black;
+                font-size: 20px;
+                cursor: pointer;
             }
 
         </style>    
@@ -208,7 +225,13 @@
     <article class="art">
         <p><b class="tx1">03/12/23:</b>Aprendi um pouco sobre tabelas e até estilizei uma para marcar os dias que já passaram ao fundo da página. ALgo bem simples mas embreve provavelmente irei passar para uma página especifica para isso se não, ocupará muito espaço da pagina.<br>
         </p>
-    
+    </article>
+ 
+ <hr size="5" noshade>   
+
+    <article class="art">
+        <p><b class="tx1">04/12/23:</b>Neste dia, dei inicio ao aprendizado de formularios e input no meu codigo. Criei um formulario de "newsletter" para assinantes receber atualizações do site e uma caixinha de comentario para o usuário deixar seu comentário sobre o meu primeiro site.
+        </p>
     </article>
     </header> 
  <hr size="5" noshade>   
@@ -235,9 +258,9 @@
             </thead>
             <tr>
                 <td class="fin"><s>01/12/23</s></td>
-                <td class="fin" ><s>02/12/23</s></td>
+                <td class="fin"><s>02/12/23</s></td>
                 <td class="fin"><s>03/12/23</s></td>
-                <td>04/12/23</td>
+                <td class="fin"><s>04/12/23</s></td>
                 <td>05/12/23</td>
                 <td>06/12/23</td>
                 <td>07/12/23</td>
@@ -314,6 +337,36 @@
         </tbody>
     </table>
 </div>   
+<section>
+    <form>
+        <form action="#" method="get" target="_blank">
+            <h1>Seja avisado quando o site for atualizado !!</h1>
+            <p>
+            <label for="nome">Seu nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+            </p>
+
+            <p>
+            <label for="email">Seu E-mail:</label>    
+            <input type="email" id="email" name="email" placeholder="email@email.com" required>
+            </p>
+
+            <p>
+            <label>Você é dev?</label><br>  
+            <label for="sim">Sim</label>
+            <input type="radio" id="sim" name="dev" value="sim"><br>
+            <label for="não">Não</label>
+            <input type="radio" id="não" name="dev" value="não">
+            </p>
+
+            <p>
+            <label for="come">Deixe um comentário sobre meu site:</label><br>
+            <textarea id="come" name="come" placeholder="Deixe seu comentário" rows="10" cols="100"></textarea>
+            <p>
+                <button type="submite" class="button">Receber atualizações!</button>
+            </p>
+    </form>
+</section>
 </main> 
 </body>
    
