@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 body{
     background-image: url(https://usagif.com/wp-content/uploads/gif/outerspace-6.gif);
     background-size:cover;
@@ -70,22 +73,37 @@ body{
 }
 .artigo {
     text-align: center;
-    font-size: 20px;
+    font-size: 25px;
     font-family: 'Times New Roman', Times, serif;
-    color:white;
+    color:rgb(32,178,170);
     margin-bottom: 0;
     font-style: italic;
+    float: right;
+    margin-right: 25px;
+    border: 5px ridge;
+    background-color: white;
+    border-color: rgb(32,178,170);
 }
 .ts {
     text-align: center;
     text-decoration: none;
+    float: inline-end;
+    clear: right;
+    margin-top: 0;
 }
 .ts a {
     text-decoration: none;
     color: rgb(32,178,170);
     font-size: 18px;
     font-family: 'Times New Roman', Times, serif;
-    margin: 0 5px;
+    margin-left: 100px;
+    margin-right: 25px;
+    margin-top: 0;
+    display: block;
+    background-color: white;
+    padding: 10px;
+    border: 5px ridge;
+
 }
 .ts a:hover {
     color:pink;
@@ -150,6 +168,7 @@ table caption {
 }
 .tabelinha{
     max-width: 100%;
+    width: auto;
     overflow-x:auto;
 }
 form { 

@@ -6,21 +6,6 @@
     <link rel="stylesheet" href="./assets/css/style.css"> 
 </head>
 <body>
-        <aside>
-            <nav>
-                <h4 class="artigo">Artigos:</h4>
-                <ul class="ts">
-                    <a href="#">28/11/23</a>
-                    <a href="#">29/11/23</a>
-                    <a href="#">30/11/23</a>
-                    <a href="#">01/11/23</a>
-                    <a href="#">02/11/23</a>
-                    <a href="#">03/11/23</a>
-                    <a href="#">04/11/23</a>
-                    <a href="#">05/11/23</a>
-                </ul>
-            </nav>
-        </aside>
         <header>
             <div>
                 <h1 class="title">Seja bem-vindo ao meu primeiro site</h1>
@@ -29,11 +14,27 @@
                     <a href="http://127.0.0.1:5500/codigo1.html">Página inicial</a>
                     <a href="https://github.com/WesleyinDev" target="_blank">Meu GitHub</a>
                     <a href="https://www.linkedin.com/in/wesley-vieira-b416b1223/" target="_blank">Meu LinkedIn</a>
-                    <a href="#" target="_blank">Preencher 1</a>
-                    <a href="#" target="_blank">Preencher 2</a>
+                    <a href="#for1">Deixe um comentário</a>
+                    <a href="#tb">Dias concluidos</a>
                 </h3> 
             </div>
         </header>
+        <aside>
+            <nav>
+                <h4 class="artigo">Artigos:</h4>
+                <ul class="ts">
+                    <a href="#">28/11/23</a>
+                    <a href="#">29/11/23</a>
+                    <a href="#">30/11/23</a>
+                    <a href="#">01/12/23</a>
+                    <a href="#">02/12/23</a>
+                    <a href="#">03/12/23</a>
+                    <a href="#">04/12/23</a>
+                    <a href="#">05/12/23</a>
+                    <a href="#">06/12/23</a>
+                </ul>
+            </nav>
+        </aside>
     <main class="main">          
             <p>Aqui, irei <b class="tx1">adicionar todos meus novos aprendizados,</b> atualizando sempre o site e <b class="tx1">não começando um novo.</b><br>
                 E consequentemente seu versionamento estará disponível no GitHub para ver a evolução deste.</p>
@@ -90,7 +91,8 @@
         <p><b class="tx1">04/12/23:</b>Neste dia, dei inicio ao aprendizado de formularios e input no meu codigo. Criei um formulario de "newsletter" para assinantes receber atualizações do site e uma caixinha de comentario para o usuário deixar seu comentário sobre o meu primeiro site.
         </p>
     </article>
- <hr size="5" noshade>
+ 
+    <hr size="5" noshade>
     
     <article class="art">
         <p><b class="tx1">05/12/23:</b>Alterei o layout do cabeçalho do site e organizei o meu código um pouco melhor, aprendi a linkar os styles com outra página. Transferi tudo para um outro documento o que deixa esse código mais limpo sem muitas linhas.<br>
@@ -100,11 +102,17 @@
         placeholder do formulario também foi alterado.
     </p>
     </article>
-    
+
+<hr size="5" noshade>
+
+    <article class="art">
+        <p><b class="tx1">06/12/23:</b>Aprendi um metodo antigo de posicionar (ou eu fiz uma gambiarra) que foi o float, com isso alinhei o menu "artigo" ao lado direito da página, que já era o plano desde o começo mas, eu não sabia como fazer, e com o float consegui, mesmo sendo uma metodologia antiga, e não ter ficado muito bom visualmente, gostei do resultado, para quem não sabia nada de html e css já é um avanço enorme.
+            Teve uma aula rápida sobre cores mas, como eu já tava manjando de cores, era só o que eu sabia então nada foi adicionado baseada nisso. Aprendi criar menus ancoras que foi adicionado ao menu principal da página e posteriormente adicionarei ao meunu lateral. Aprendi também a alterar a forma de rolagem da página na ancoragem. Também teve aula sobre unidade medidas e encerrei o dia de estudo.
+        </p>
 </header>
 </section>
     <section>
-        <div class="tabelinha">
+        <div class="tabelinha" id="tb">
             <table>
                 <caption>Dias aprendendo programação:</caption>
                 <thead>
@@ -128,7 +136,7 @@
                 <td class="fin"><s>03/12/23</s></td>
                 <td class="fin"><s>04/12/23</s></td>
                 <td class="fin"><s>05/12/23</s></td>
-                <td>06/12/23</td>
+                <td class="fin"><s>06/12/23</s></td>
                 <td>07/12/23</td>
                 <td>08/12/23</td>
                 <td>09/12/23</td>
@@ -206,7 +214,7 @@
 </section>
 
 <section>
-<form>
+<form id="for1">
     <h1>Envie-me seu feedback!!</h1>
     <p>
         <label for="nome">Seu nome:</label>
