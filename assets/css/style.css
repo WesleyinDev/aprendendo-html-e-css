@@ -25,6 +25,7 @@ body{
     border-top-color: rgb(255,0,255);
     padding: 25px;
     list-style:none;
+    text-shadow: 5px 5px 5px black;
 }
 .main a:link{
     color:red;
@@ -168,8 +169,7 @@ table caption {
 }
 .tabelinha{
     max-width: 100%;
-    width: auto;
-    overflow-x:auto;
+    overflow: auto;
 }
 form { 
     border: 5px ridge;
@@ -178,6 +178,7 @@ form {
     margin-top: 50px;
     font-style: italic;
     font-family: sans-serif;
+    overflow: auto;
 }
 .button {
     width: 250px;
@@ -207,4 +208,19 @@ textarea:focus {
     font-style: italic;
     font-size: 15px;
     font-family: 'Times New Roman', Times, serif;
+}
+.posi {
+    position: absolute;
+    height: 50px;
+    top: 1700px;
+    left: 1150px;
+    box-shadow: -2px 1px 5px white;
+}
+.return {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
 }
