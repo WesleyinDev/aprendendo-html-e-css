@@ -26,6 +26,8 @@ body{
     padding: 25px;
     list-style:none;
     text-shadow: 5px 5px 5px black;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0px 0px 50px yellow;
 }
 .main a:link{
     color:red;
@@ -72,72 +74,35 @@ body{
     font-size: 13px;
     margin: 0;
 }
-.artigo {
-    text-align: center;
-    font-size: 25px;
-    font-family: 'Times New Roman', Times, serif;
-    color:rgb(32,178,170);
-    margin-bottom: 0;
-    font-style: italic;
-    float: right;
-    margin-right: 25px;
-    border: 5px ridge;
-    background-color: white;
-    border-color: rgb(32,178,170);
-}
-.ts {
-    text-align: center;
-    text-decoration: none;
-    float: inline-end;
-    clear: right;
-    margin-top: 0;
-}
-.ts a {
-    text-decoration: none;
-    color: rgb(32,178,170);
-    font-size: 18px;
-    font-family: 'Times New Roman', Times, serif;
-    margin-left: 100px;
-    margin-right: 25px;
-    margin-top: 0;
-    display: block;
-    background-color: white;
-    padding: 10px;
-    border: 5px ridge;
-
-}
-.ts a:hover {
-    color:pink;
-    font-style: italic;
-}
-body header h3 a {
-    color: rgb(32,178,170);
+.menu{
     text-transform: uppercase;
     font-size: 20px;
-    text-decoration: none;  
-    padding: 0px;
     text-align: center;
-    margin: 0 5px;
+    position:fixed;
+    width: 1380px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-top: 0px;
+    display: block;
+    text-align: center;
+    background-color: black;
+    top: 0px;
+    border-bottom: white solid;
 }
-body header div h3 :hover {
+.menu a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+.menu a:hover {
     color: rgb(255,20,147);
     font-style: italic;
-    margin:0;
-    padding: 0;
     transition: all 400ms ease-in-out;
 }   
-body header div h3{
-   background-color: #ffffff;
-    padding: 0px;
-    margin: 0 0 10px;
-    border-left: 0;
-    border-right: 0;
-    border-bottom: 5px;
-    border-top: 5px;
-    border-color: rgb(255,215,0);
-    border-style:ridge;
-    text-align: center;
-}
+
 .tx2 a {
     text-decoration:none;
     color: red;
@@ -198,6 +163,9 @@ form {
     margin: 0 0 10px;
     
 }
+.descer {
+    padding-top: 80px;
+}
 input:focus {
     box-shadow: 0 0 50px rgb(255,0,0);
 }
@@ -213,7 +181,7 @@ textarea:focus {
     position: absolute;
     height: 50px;
     top: 1700px;
-    left: 1150px;
+    left: 1170px;
     box-shadow: -2px 1px 5px white;
 }
 .return {
