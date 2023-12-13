@@ -88,6 +88,7 @@ body{
     background-color: black;
     top: 0px;
     border-bottom: white solid;
+    z-index: 1;
 }
 .menu a {
     color: white;
