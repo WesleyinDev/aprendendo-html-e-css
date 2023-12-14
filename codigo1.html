@@ -5,32 +5,58 @@
     <meta charset="UTF-8">
     <title>Dev Wesley</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Freehand&family=Grandiflora+One&family=Kalnia:wght@300;400&family=Whisper&display=swap"
+        rel="stylesheet">
 </head>
 
 <body> <!-- Corpo da pagina-->
 
-    <header>
-        <div>
-            <a href="#return"><img class="return"
-                    src="https://icon-library.com/images/back-to-top-icon-png/back-to-top-icon-png-0.jpg"
-                    alt="Return"></a>
+
+    <!-- Primeira parte a ser modificada-->
+    <div>
+        <a id="return" href="#return"><img class="return"
+                src="https://icon-library.com/images/back-to-top-icon-png/back-to-top-icon-png-0.jpg" alt="Return"></a>
+    </div>
+
+    <aside class="menu">
+        <section class="main-content menu-content">
+            <h1 class="wesley">
+                <a href="#">DevWesley</a>
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href=#return><b>Inicio</b></a></li>
+                    <li><a href="https://github.com/WesleyinDev" target="_blank"><b>Meu GitHub</b></a></li>
+                    <li><a href="https://www.linkedin.com/in/wesley-vieira-b416b1223/" target="_blank"><b>Meu
+                                LinkedIn</b></a></li>
+                    <li><a href="#for1"><b>Deixe um comentário</b></a></li>
+                    <li><a href="#tb"><b>Dias concluidos</b></a></li>
+                </ul>
+            </nav>
+        </section>
+    </aside>
+    <div class="descer"></div>
+
+    <div class="section main-bg">
+        <div class="main-content inicio-content">
+            <section class="text-content">
+                <h2>Seja bem-vindo ao meu primeiro site</h2>
+                <p>Neste site, irei documentar minha evolução em CSS e HTML. E a medida que eu for aprendendo novas
+                    coisas irei incrementando aqui no que for possivel. Quero criar um conhecimento básico nessas
+                    ferramentas para pelo menos saber do que se trata porém, não pretendo ir muito a fundo pois eu quero
+                    focar no backend.
+                <p>
+            </section>
+            <div>
+                <img src="/assets/img/me.jpg">
+            </div>
         </div>
-        <div class="posi">
-        </div>
-        <div>
-            <h3 class="menu">
-                <a href="http://127.0.0.1:5500/codigo1.html">Página inicial</a>
-                <a href="https://github.com/WesleyinDev" target="_blank">Meu GitHub</a>
-                <a href="https://www.linkedin.com/in/wesley-vieira-b416b1223/" target="_blank">Meu LinkedIn</a>
-                <a href="#for1">Deixe um comentário</a>
-                <a href="#tb">Dias concluidos</a>
-            </h3>
-        </div>
-        <div class="descer">
-            <h1 id="return" class="title">Seja bem-vindo ao meu primeiro site</h1>
-            <h2 class="title">Documentando minha evolução em HTML e CSS</h2>
-        </div>
-    </header>
+    </div>
+    <!-- Primeira parte a ser modificada -->
+
     <main class="main">
         <p>Aqui, irei <b class="tx1">adicionar todos meus novos aprendizados,</b> atualizando sempre o site e <b
                 class="tx1">não começando um novo.</b><br>
@@ -42,16 +68,20 @@
                 <article class="art">
                     <h2><i>Atualizações de aprendizado:</i></h2>
                     <p><b class="tx1">28/11/23:</b> Aprendizados: tags (inline), identificadores (id e class),
-                        diferentes títulos (h1, h2, h3, h4, h5, h6) e um pouco sobre stylus (color, background e como
+                        diferentes títulos (h1, h2, h3, h4, h5, h6) e um pouco sobre stylus (color, background e
+                        como
                         atribuir a class e a id a esses parâmetros),
                         adição de style diretamente na tag, <a href="https://www.instagram.com/mrwesleyvieira/"
                             target="_blank">adição de links ou arquivos, e suas "target", adição de imagem,<img
                                 class="img-txt1"
                                 src="https://ovicio.com.br/wp-content/uploads/2023/10/20231023-attack-on-titan-eren.jpg"
-                                alt="Eren, personagem de Attack on Titan"></a> links na imagem e alterar sua altura e
+                                alt="Eren, personagem de Attack on Titan"></a> links na imagem e alterar sua altura
+                        e
                         largura.</p>
-                    <blockquote class="bloq"> <span class="color1">Realmente</span>, <span class="color2">é muita coisa
-                            para aprender,</span> <span class="color3">acredito que impossível,</span> aprender em 30
+                    <blockquote class="bloq"> <span class="color1">Realmente</span>, <span class="color2">é muita
+                            coisa
+                            para aprender,</span> <span class="color3">acredito que impossível,</span> aprender em
+                        30
                         dias a programar full stack, na verdade, nem front muito menos back end.</blockquote>
                 </article>
 
@@ -59,8 +89,10 @@
 
                 <article class="art">
                     <p><b class="tx1">29/11/23:</b> Aprendizados de hoje: Criar um tipo de "menu" dentro da tag
-                        "header". algo bem simples mesmo. e a organizar melhor um pouco meu código justamente com a tag
-                        "header"<br>Aprendi também a centralizar texto utilizando o "text-align" ou uma imagem usando a
+                        "header". algo bem simples mesmo. e a organizar melhor um pouco meu código justamente com a
+                        tag
+                        "header"<br>Aprendi também a centralizar texto utilizando o "text-align" ou uma imagem
+                        usando a
                         "div".<br> Criação de class com, text-family, font-size, font-style. Por hoje foi só, estou
                         muito cansado do trabalho para estudar mais.</p>
                 </article>
@@ -68,7 +100,8 @@
                 <hr noshade>
 
                 <article class="art">
-                    <p><b class="tx1">30/11/23:</b> Aprendizados de hoje: Métodologia na criação de sites usando a div.
+                    <p><b class="tx1">30/11/23:</b> Aprendizados de hoje: Métodologia na criação de sites usando a
+                        div.
                         ou seja, foi me instruido que a forma de criar site é pela estruturas de bloco com
                         div.<br>Melhor utilização das tags em geral, e aplicação de novas funcionalidades as minhas
                         class e id.<br>
@@ -79,10 +112,13 @@
                     <hr noshade>
                 </article>
                 <article class="art">
-                    <p><b class="tx1">01/12/23:</b> Hoje, comecei o dia atualizando o codigo do site, organizando melhor
-                        para facilitar o entendimento e as mudanças. Se observado no codigo anterior tinha muita coisa
+                    <p><b class="tx1">01/12/23:</b> Hoje, comecei o dia atualizando o codigo do site, organizando
+                        melhor
+                        para facilitar o entendimento e as mudanças. Se observado no codigo anterior tinha muita
+                        coisa
                         desnecessaria.<br>
-                        Deste forma eu mesmo, consigo me localizar e entender melhor o que fiz neste projeto. Ao fim,
+                        Deste forma eu mesmo, consigo me localizar e entender melhor o que fiz neste projeto. Ao
+                        fim,
                         dei introdução ao CSS com box-model. Com isso aprendi, a criar uma borda em volta do meu
                         conteúdo, alterar o padding e afins.
                         No geral por hoje foi mais isso.
@@ -92,7 +128,8 @@
                 <hr noshade>
 
                 <article class="art">
-                    <p><b class="tx1">02/12/23:</b>Hoje, mexi um pouco no menu, dei uma brincada com direcionamento do
+                    <p><b class="tx1">02/12/23:</b>Hoje, mexi um pouco no menu, dei uma brincada com direcionamento
+                        do
                         style especifico (ja que o que eu fazia sempre atingia toda a pagina)<br>
                 </article>
 
@@ -100,7 +137,8 @@
 
                 <article class="art">
                     <p><b class="tx1">03/12/23:</b>Aprendi um pouco sobre tabelas e até estilizei uma para marcar os
-                        dias que já passaram ao fundo da página. Algo bem simples mas embreve provavelmente irei passar
+                        dias que já passaram ao fundo da página. Algo bem simples mas embreve provavelmente irei
+                        passar
                         para uma página especifica para isso se não, ocupará muito espaço da pagina.<br>
                     </p>
                 </article>
@@ -108,8 +146,10 @@
                 <hr noshade>
 
                 <article class="art">
-                    <p><b class="tx1">04/12/23:</b>Neste dia, dei inicio ao aprendizado de formularios e input no meu
-                        codigo. Criei um formulario de "newsletter" para assinantes receber atualizações do site e uma
+                    <p><b class="tx1">04/12/23:</b>Neste dia, dei inicio ao aprendizado de formularios e input no
+                        meu
+                        codigo. Criei um formulario de "newsletter" para assinantes receber atualizações do site e
+                        uma
                         caixinha de comentario para o usuário deixar seu comentário sobre o meu primeiro site.
                     </p>
                 </article>
@@ -120,15 +160,20 @@
                     <p><b class="tx1">05/12/23:</b>Alterei o layout do cabeçalho do site e organizei o meu código um
                         pouco melhor, aprendi a linkar os styles com outra página. Transferi tudo para um outro
                         documento o que deixa esse código mais limpo sem muitas linhas.<br>
-                        Passei por alguns perrengues na hora de organizar o site melhor, como por exemplo aplicar cores
+                        Passei por alguns perrengues na hora de organizar o site melhor, como por exemplo aplicar
+                        cores
                         e remover a linha dos "artigo" mas consegui resolver. Hoje, percebi que esta ficando mais
                         complexo manusear os atributos dentro do site.<br>
-                        Fiz algumas alterações mas, devido ser um site iniciado de forma "avulsa" o que fui aprendendo
-                        eu fui aplicando, o codigo se tornou complexo de manusear. Porém permancerei no projeto e aos
-                        poucos vou melhorando esses pontos. Alterei alguns efeitos, como por o exemplo o de selecionar o
+                        Fiz algumas alterações mas, devido ser um site iniciado de forma "avulsa" o que fui
+                        aprendendo
+                        eu fui aplicando, o codigo se tornou complexo de manusear. Porém permancerei no projeto e
+                        aos
+                        poucos vou melhorando esses pontos. Alterei alguns efeitos, como por o exemplo o de
+                        selecionar o
                         texto, animações sobre os links do menu e do artigo foram adicionadas também.<br>
                         Alteirei o background, não achei o que eu procurava mas, coloquei um que achei interessante.
-                        Sombras foram adicionadas no formulario ao ser selecionado alguma caixa, o que deu um efeito bem
+                        Sombras foram adicionadas no formulario ao ser selecionado alguma caixa, o que deu um efeito
+                        bem
                         interessante também.<br>
                         placeholder do formulario também foi alterado.
                     </p>
@@ -137,15 +182,22 @@
                 <hr noshade>
 
                 <article class="art">
-                    <p><b class="tx1">06/12/23:</b>Aprendi um metodo antigo de posicionar (ou eu fiz uma gambiarra) que
+                    <p><b class="tx1">06/12/23:</b>Aprendi um metodo antigo de posicionar (ou eu fiz uma gambiarra)
+                        que
                         foi o float, com isso alinhei o menu "artigo" ao lado direito da página, que já era o plano
-                        desde o começo mas, eu não sabia como fazer, e com o float consegui, mesmo sendo uma metodologia
-                        antiga, e não ter ficado muito bom visualmente, gostei do resultado, para quem não sabia nada de
+                        desde o começo mas, eu não sabia como fazer, e com o float consegui, mesmo sendo uma
+                        metodologia
+                        antiga, e não ter ficado muito bom visualmente, gostei do resultado, para quem não sabia
+                        nada de
                         html e css já é um avanço enorme.
-                        Teve uma aula rápida sobre cores mas, como eu já tava manjando de cores, era só o que eu sabia
-                        então nada foi adicionado baseada nisso. Aprendi criar menus ancoras que foi adicionado ao menu
-                        principal da página e posteriormente adicionarei ao meunu lateral. Aprendi também a alterar a
-                        forma de rolagem da página na ancoragem. Também teve aula sobre unidade medidas e encerrei o dia
+                        Teve uma aula rápida sobre cores mas, como eu já tava manjando de cores, era só o que eu
+                        sabia
+                        então nada foi adicionado baseada nisso. Aprendi criar menus ancoras que foi adicionado ao
+                        menu
+                        principal da página e posteriormente adicionarei ao meunu lateral. Aprendi também a alterar
+                        a
+                        forma de rolagem da página na ancoragem. Também teve aula sobre unidade medidas e encerrei o
+                        dia
                         de estudo.
                     </p>
                 </article>
@@ -153,42 +205,56 @@
                 <hr noshade>
 
                 <article class="art">
-                    <p><b class="tx1">07/12/23:</b>Hoje foi adicionado uma sombra ao corpo do texto principal da página,
+                    <p><b class="tx1">07/12/23:</b>Hoje foi adicionado uma sombra ao corpo do texto principal da
+                        página,
                         eu sabia a existencia deste comando mas não sabia como utilizado, e hoje aprendi e apliquei.
                         Também aprendi sobre posicionamento. Inclusive tem um exemplo bem aqui --><img class="posi"
                             src="https://sm.ign.com/ign_br/screenshot/default/eren-aot_91he.jpg" alt="Eren"><br>
-                        Inclusive, adicionei um botão para voltar para o topo, juntando as tecnicas de ancora, posição e
+                        Inclusive, adicionei um botão para voltar para o topo, juntando as tecnicas de ancora,
+                        posição e
                         link na imagem. Ficou interessante, não sei é uma gambiarra mas na minha cabeça, quando
                         idealizei isto, funcionou muito bem.
                     </p>
                 </article>
                 <hr size="5" noshade>
                 <article class="art">
-                    <p><b class="tx1">08/12/23:</b> Fiz algumas alterações direto na página, alterei o menu para um menu
-                        fixo que acompanha o rolar, removi o menu lateral de "artigo" já que no fim, eu não via muita
+                    <p><b class="tx1">08/12/23:</b> Fiz algumas alterações direto na página, alterei o menu para um
+                        menu
+                        fixo que acompanha o rolar, removi o menu lateral de "artigo" já que no fim, eu não via
+                        muita
                         funcionalidade nele. Aprendi tambéma "arrendodar" os objetos. Adicionei ao menu lateral de
                         "artigo" porém, removi o menu. Adicionei também ao corpo principal da página.
-                        Também adicionei uma shadow em volta do corpo principal. E no dia de hoje, aprendi mais sobre
+                        Também adicionei uma shadow em volta do corpo principal. E no dia de hoje, aprendi mais
+                        sobre
                         flexbox mas sem ideis de como aplica-la ao site :(
                     </p>
                 </article>
                 <hr noshade>
                 <article class="art">
-                    <p><b class="tx1">09/12/23:</b> Hoje, foi a conclusão do curso de html e css; aprendi tudo que era
+                    <p><b class="tx1">09/12/23:</b> Hoje, foi a conclusão do curso de html e css; aprendi tudo que
+                        era
                         necessario para ter um conhecimento "base, mesmo que eu pretenda focar no backend é bem
-                        importante eu construir um conhecimento na area. Com esse conhecimento ja consegui construir um
-                        primeiro site com algumas funcionalidades (este que você esta lendo) mas também, percebi o quão
+                        importante eu construir um conhecimento na area. Com esse conhecimento ja consegui construir
+                        um
+                        primeiro site com algumas funcionalidades (este que você esta lendo) mas também, percebi o
+                        quão
                         complexo ta para evolução dele. Bom, para a proposta dele esta sufiente mas, fica complexo e
                         dificultoso adicionra grids por exemplo,
                         adicionar display flex e afins, não é impossivel, o problema esta em implementar isso nesta
-                        pagina. Conclui o curso basico mas ainda assim eu vou continuar lendo algumas documentação por
+                        pagina. Conclui o curso basico mas ainda assim eu vou continuar lendo algumas documentação
+                        por
                         pelo menos mais uns 3 dias. e ir aplicando aqui no site o que eu vou desenvolvendo. Não irei
-                        para-lo so porque encerrei o curso de html e css pelo contrario, vou dar funcionalidades ao site
-                        com o js, e a se chegar ao ponto do codigo ser inutilizado, irei reistilizara pagina e matinda
+                        para-lo so porque encerrei o curso de html e css pelo contrario, vou dar funcionalidades ao
+                        site
+                        com o js, e a se chegar ao ponto do codigo ser inutilizado, irei reistilizara pagina e
+                        matinda
                         apenas o conteúdo que ja escrevi aqui.
-                        encerrei o curso com o grid, ou seja, a ultima aula de html e css foi aprender sobre as grid,
-                        não tive ideias de como aplicar ela na pagina como um todo no momento porque, dai eu tinha que
-                        reestruturar toda a pagina, então fiz apenas uma apresentação abaixo para expor algumas fotos.
+                        encerrei o curso com o grid, ou seja, a ultima aula de html e css foi aprender sobre as
+                        grid,
+                        não tive ideias de como aplicar ela na pagina como um todo no momento porque, dai eu tinha
+                        que
+                        reestruturar toda a pagina, então fiz apenas uma apresentação abaixo para expor algumas
+                        fotos.
                     </p>
                     <div class="container">
                         <div class="background">
@@ -224,11 +290,14 @@
                         </div>
                     </div>
                     <p>Esta é a aplicação de grid que me veio a cabeça, criar uma galeria simples de 6 imagens, onde
-                        grid-template-columns: recebe 3 auto. Peguei um pouco da lógica onde eu posso dizer a quantidade
+                        grid-template-columns: recebe 3 auto. Peguei um pouco da lógica onde eu posso dizer a
+                        quantidade
                         de conteúdo em linha é determinado pelo columns, e o que eu achei interessante é que, ela
-                        simplismente ignora a condição do meu "main" ou seja, ela vara a estrutura que criei para manter
+                        simplismente ignora a condição do meu "main" ou seja, ela vara a estrutura que criei para
+                        manter
                         o contúdo dentro.
-                        Tentei também fazer uma especie de expansão ao clicar sobre a imagem e meio que funcionou mas
+                        Tentei também fazer uma especie de expansão ao clicar sobre a imagem e meio que funcionou
+                        mas
                         não consegui redimesionar a imagem ao abrir ela, infelizmente. Encerrei o dia.
                     </p>
                 </article>
@@ -236,10 +305,13 @@
                 <article class="art">
                     <p><b class="tx1">10/12/23:</b>
                         Comecei o dia conferindo meu codigo e percebi que tinha <mark class="cor">tags sem
-                            fechamento</mark> então, tirei uma parte do tempo para fechar essas tags como o "body" e o
-                        "html". Dai, fui ler os algumas documentações para refrescar a memorias e aprender mais sobre
+                            fechamento</mark> então, tirei uma parte do tempo para fechar essas tags como o "body" e
+                        o
+                        "html". Dai, fui ler os algumas documentações para refrescar a memorias e aprender mais
+                        sobre
                         html e css.
-                        Aprendi a por video no codigo e pra manter o conhecimento, criei uma grid para por mais de um
+                        Aprendi a por video no codigo e pra manter o conhecimento, criei uma grid para por mais de
+                        um
                         video e igualmente para a adição de audio. E encerrei o dia.
                     </p>
 
@@ -293,7 +365,8 @@
                 </article>
                 <article class="art">
                     <p><b class="tx1">11/12/23:</b>Hoje, dei inicio a um novo projeto, não vou deixar este de lado
-                        obviamente mas também não posso me ligar completamente a ale mas, em breve volto a fazer algo
+                        obviamente mas também não posso me ligar completamente a ale mas, em breve volto a fazer
+                        algo
                         aqui
                     </p>
                 </article>
@@ -301,14 +374,32 @@
                 <article class=art>
                     <p><b class="tx1">12/12/23:</b>Passei o dia inteiro fazendo a lading page, confesso, muito do
                         conhecimento se foi da cabeça, o basico ainda estou ciente como por exemplo, estruturar a
-                        pagina, tags básicas, css etc. Mas muito do bruto se foi, por exemplo animações, flexbox, pseudo
+                        pagina, tags básicas, css etc. Mas muito do bruto se foi, por exemplo animações, flexbox,
+                        pseudo
                         elementos etc. Mas conclui, relendo as documentações, re-assistindo algumas aulas conclui a
                         ladind page. Se você quiser dar uma olhada no projeto só <a
                             href="https://github.com/WesleyinDev/Lading-Page-Cats" target="_blank">Clicar aqui</a>
                         To satisfeito com o projeto. Amanhã, vou reler algumas documentar e aplicar aqui neste site
                         algumas coisas, quem sabe atualizar a estrutura dele. ta me dando agonia. A unica alteração
-                        feita neste site no dia de hoje foi o z-index do menu, que já devia ter arrumado e não arrumei.
+                        feita neste site no dia de hoje foi o z-index do menu, que já devia ter arrumado e não
+                        arrumei.
                         E encerrei o dia.
+                    </p>
+                </article>
+
+                <article class="art">
+                    <hr noshade>
+                    <p><b class="tx1">13/12/23:</b> Este dia não teve atualizações. Foi um dia "off", não fiz nada
+                        relacionado a programação
+                    </P>
+                </article>
+
+                <hr noshade>
+                <article class="art">
+                    <p><b class="">14/13/23:</b>Comecei a fazer uma atualizão no site, comecei mudandoo menu do site, que não
+                        tive muita dificuldade de mudar, apaguei algumas classes inuteis, adicionei fotes ao site para
+                        deixar mais bonito visualmente e diferente. Também mudei o inicio do site. Ficou muito mais
+                        bonito que antes.
                     </p>
                 </article>
             </header>
@@ -347,8 +438,8 @@
                             <td class="fin"><s>12/12/23</s></td>
                         </tr>
                         <tr>
-                            <td>13/12/23</td>
-                            <td>14/12/23</td>
+                            <td class="fin"><s>NONE</s></td>
+                            <td class="fin"><s>14/12/23</s></td>
                             <td>15/12/23</td>
                             <td>16/12/23</td>
                             <td>17/12/23</td>
@@ -447,7 +538,8 @@
 
     <div class="rodape">
         <hr size="8" noshade>
-        <footer> Este site é meu projeto, e esta sendo atualizado constatimente com o que eu aprendo de novo <br> Todos
+        <footer> Este site é meu projeto, e esta sendo atualizado constatimente com o que eu aprendo de novo <br>
+            Todos
             os direitos reservados</footer>
     </div>
 </body>
