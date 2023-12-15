@@ -9,6 +9,7 @@ font-family: 'Whisper', cursive; */
     --gap: 3rem;
     --ligth-gray: #EEEEEE;
     --coral: #FF7F50;
+    --main-bg: #F8F8FF;
 
 }
 html {
@@ -40,6 +41,19 @@ body {
     font-family: 'Grandiflora One', cursive;
     font-size: 2rem;
     background-color: #00BFFF;
+}
+.main-bg-white {
+    display: block;
+    background-color: var(--main-bg);
+    border-radius: 2rem;
+    top: 0;
+    box-shadow: 0 0 10rem red;
+}
+.main-bg-white a:link{
+    color:red;
+}
+.main-bg-white a:visited {
+    color:darkorange;
 }
 .main-bg {
     background-image: url('/assets/img/bg.svg');
@@ -75,6 +89,16 @@ body {
     text-transform: uppercase;
     line-height: 6rem;
     color: var(--primary-color);
+}
+.text-content-2 {
+    display: flex;
+    line-height: 1.5;
+    color: var(--primary-color);
+    text-align: center;
+}
+.text-content-2 p {
+    font-size: 3rem;
+    font-weight:800;
 }
 .text-content p {
     line-height: 3rem;
@@ -136,6 +160,33 @@ body {
     text-transform: initial;
     color: var(--primary-color);
 }
+hr {
+    border: 0;
+    border-top: medium double;
+    height: 1px;
+    overflow: visible;
+    padding: 3rem;
+    color: var(--secondary-color);
+    text-align: center;
+}
+.gap {
+    display: block;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+  
+hr::after {
+
+    content: "DevWesley";
+    font-style: italic;
+    display: inline-block;
+    position: relative;
+    top: -6.2rem;
+    font-size: 4rem;
+    padding: 0 5rem;
+    background: none;
+    font-family: 'Whisper', cursive;
+}
 .main {
     text-align:center;
     color:white;
@@ -157,12 +208,6 @@ body {
     text-shadow: 5px 5px 5px black;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 0px 0px 50px yellow;
-}
-.main a:link{
-    color:red;
-}
-.main a:visited {
-    color:darkorange;
 }
 *::selection {
     background-color: black;
@@ -207,35 +252,32 @@ body {
     text-decoration:none;
     color: red;
 }
-table {
+.table-content {
+    margin: 0 auto; 
     border-collapse: collapse;
-    background-color: rgba(105,105,105,0.3);
-    border: 6px;
-    border-style: ridge;
-    border-color: rgb(0,255,127);
-    
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 6px ridge white; 
+    max-width: 100%;
 }
-table td, table th {
+
+.table-content td, .table-content th {
     padding: 5px;
     text-align: center;
-    border: 1px;
-    border-style: ridge;
+    border: 1px ridge; 
 }
+
 table caption {
-    font-family: sans-serif;
     font-size: 20px;
     font-style: italic;
     margin-bottom: 10px;
 }
+
 .fin {
     font-style: italic;
     color: rgb(255,0,0);
     background-color: rgb(105,89,205);
 }
-.tabelinha{
-    max-width: 100%;
-    overflow: auto;
-}
+
 form { 
     border: 5px ridge;
     border-color: rgb(131,111,255);
