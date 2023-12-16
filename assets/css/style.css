@@ -1,39 +1,194 @@
+/* font-family: 'Freehand', cursive;
+font-family: 'Grandiflora One', cursive;
+font-family: 'Kalnia', serif;
+font-family: 'Whisper', cursive; */
+
+:root {
+    --primary-color: #F8F8FF;
+    --secondary-color: #00BFFF;
+    --gap: 3rem;
+    --ligth-gray: #EEEEEE;
+    --coral: #FF7F50;
+    --main-bg: #F8F8FF;
+
+}
 html {
     scroll-behavior: smooth;
+    font-size: 62.5%;
+    line-height: 1.5;
 }
-body{
-    background-image: url(https://usagif.com/wp-content/uploads/gif/outerspace-6.gif);
-    background-size:cover;
-    background-attachment: fixed;
+* {
     margin: 0;
+    padding: 0;
 }
-.main {
-    text-align:center;
-    color:white;
-    font-size: 20px;
-    font-family:'Times New Roman', Times, serif;
-    background-color:rgba(0, 0, 0, 0.7);
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: 150px;
-    margin-right: 150px;
-    border-style:ridge;
-    border-width: 8px;
-    border-bottom-color: rgb(0,0,255);
-    border-left-color: rgb(0,255,255);
-    border-right-color: rgb(0,250,154);
-    border-top-color: rgb(255,0,255);
-    padding: 25px;
-    list-style:none;
-    text-shadow: 5px 5px 5px black;
-    border-radius: 20px 20px 20px 20px;
-    box-shadow: 0px 0px 50px yellow;
+a {
+    text-decoration: none;;
 }
-.main a:link{
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Kalnia', serif;
+}
+h1 {
+    text-transform: uppercase;
+    font-size: 6rem;
+}
+h2 {
+    font-size: 5.5rem;
+}
+h3 {
+    font-size: 5rem;
+}
+body {
+    font-family: 'Grandiflora One', cursive;
+    font-size: 2rem;
+    background-color: #00BFFF;
+}
+.main-bg-white {
+    display: block;
+    background-color: var(--main-bg);
+    border-radius: 2rem;
+    top: 0;
+    box-shadow: 0 0 10rem red;
+}
+.main-bg-white a:link{
     color:red;
 }
-.main a:visited {
+.main-bg-white a:visited {
     color:darkorange;
+}
+.main-bg {
+    background-image: url('/assets/img/bg.svg');
+    background-size: cover;
+    background-attachment: none;
+    
+}
+.main-content {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: var(--gap);
+}
+.section {
+    min-height: 100vh;
+}
+.inicio-content {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+.inicio-content img {
+    max-width: 100%;
+    max-height: auto;
+    transform: rotate(5deg);
+}
+.text-content {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+.text-content h2 {
+    text-transform: uppercase;
+    line-height: 6rem;
+    color: var(--primary-color);
+}
+.text-content-2 {
+    display: flex;
+    line-height: 1.5;
+    color: var(--primary-color);
+    text-align: center;
+    text-shadow: 0 0 2rem black;
+}
+.text-content-2 p {
+    font-size: 3rem;
+    font-weight:800;
+}
+.text-content p {
+    line-height: 3rem;
+    color: var(--primary-color);
+    font-size: 3rem;
+}
+.menu {
+    background-color: var(--secondary-color);
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border-bottom: 0.2rem solid var(--ligth-gray);
+}
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+.menu ul li a {
+    display: block;
+    padding: 1.5rem;
+    font-size: 2rem;
+    color: var(--primary-color);
+    font-family: 'Grandiflora One', cursive;
+    position: relative;
+}
+.menu ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 1.2rem;
+    left: 15%;
+    width: 0%;
+    height: 0.2rem;
+    background-color: var(--coral);
+    transition: all 300ms ease-in-out;
+
+}
+.menu ul li a:hover::after {
+    left: 15%;
+    width: 70%;
+}
+.menu h1 {
+    font-size: 3rem;
+}
+.menu h1 a {
+    color: inherit;
+}
+.menu-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+.wesley {
+    font-family: 'Freehand', cursive;
+    text-transform: initial;
+    color: var(--primary-color);
+    font-size: 3rem;
+    text-shadow: 0 0 1rem red;
+}
+hr {
+    border: 0;
+    border-top: medium double;
+    height: 0.1rem;
+    overflow: visible;
+    padding: 3rem;
+    color: var(--secondary-color);
+    text-align: center;
+}
+.gap {
+    display: block;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+  
+hr::after {
+
+    content: "DevWesley";
+    font-style: italic;
+    display: inline-block;
+    position: relative;
+    top: -6.2rem;
+    font-size: 4rem;
+    padding: 0 5rem;
+    background: none;
+    font-family: 'Whisper', cursive;
 }
 *::selection {
     background-color: black;
@@ -41,211 +196,199 @@ body{
 }
 .art {
     text-align: center;
-    font-size: 15px;
+    font-size: 1.5rem;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style:oblique;
-}    
+} 
+.art h2 {
+    text-transform: uppercase;
+}   
 .tx1 {
-    color: rgb(176,224,230);
+    color: rgb(7, 7, 7);
+    text-shadow: 0 0 0.1rem red;
 }
 .img-txt1 {
-    width: 15px;
-    height: 15px;
+    width: 1.5rem;
+    height: 1.5rem;
 }
 .color1 {
-    font-size: 30px;
+    font-size: 3rem;
     color: red;
 }
 .color2 {
-    font-size: 25px;
+    font-size: 2.5rem;
     color: yellow;
 }
 .color3 {
-    font-size: 20px;
+    font-size: 2rem;
     color: green;
 }
 .rodape {
     width: 100%;
-    height: 50px;
+    height: 5rem;
     background-color: #bb3a4e;
     font-style: italic;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align:center;
-    font-size: 13px;
+    font-size: 1.3rem;
     margin: 0;
 }
-.menu{
-    text-transform: uppercase;
-    font-size: 20px;
-    text-align: center;
-    position:fixed;
-    width: 1380px;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    margin-top: 0px;
-    display: block;
-    text-align: center;
-    background-color: black;
-    top: 0px;
-    border-bottom: white solid;
-    z-index: 1;
-}
-.menu a {
-    color: white;
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px;
-    padding-bottom: 0px;
-    margin-bottom: 0px;
-}
-.menu a:hover {
-    color: rgb(255,20,147);
-    font-style: italic;
-    transition: all 400ms ease-in-out;
-}   
-
-.tx2 a {
-    text-decoration:none;
-    color: red;
-}
-table {
+.table-content {
+    margin: 0 auto; 
     border-collapse: collapse;
-    background-color: rgba(105,105,105,0.3);
-    border: 6px;
-    border-style: ridge;
-    border-color: rgb(0,255,127);
-    
+    background-color: rgba(17, 17, 17, 0.945);
+    max-width: 100%;
+    border-radius: 2rem;
 }
-table td, table th {
-    padding: 5px;
+.table-content h2{
+    color: var(--primary-color);
+    text-shadow: 0 0 1rem black;
+    text-transform: uppercase;
+    font-size: 5rem;
+}
+.table-content tr td {
+    border: 0.1rem solid white;
+}
+.table-content td, .table-content th {
+    border: none;
+    padding: 0.5rem;
     text-align: center;
-    border: 1px;
-    border-style: ridge;
+    color: white;
 }
+
 table caption {
-    font-family: sans-serif;
-    font-size: 20px;
+    font-size: 2rem;
     font-style: italic;
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
 }
+
 .fin {
     font-style: italic;
     color: rgb(255,0,0);
-    background-color: rgb(105,89,205);
+    background-color: rgb(255, 0, 0);
 }
-.tabelinha{
-    max-width: 100%;
-    overflow: auto;
-}
-form { 
-    border: 5px ridge;
+
+.form-container { 
+    display: flex;
+    text-align: center;
+    padding: 1rem;
+    justify-content: center;
+    border: 0.5rem ridge;
     border-color: rgb(131,111,255);
     background-color: rgba(211,211,211,0.5);
-    margin-top: 50px;
+    margin-top: 5rem;
     font-style: italic;
     font-family: sans-serif;
     overflow: auto;
+    border-radius: 2rem;
+}
+.form-container h1 {
+    color: var(--primary-color);
+    text-shadow: 0 0 1rem black;
+
+}
+.quest {
+    display: inline-flex;
+    justify-items: center;
+    align-items: center;
 }
 .button {
-    width: 250px;
-    height: 50px;
+    width: 25rem;
+    height: 5rem;
     background-color: white;
     font-style: italic;
     font-family: serif;
-    border: 2px solid black;
-    font-size: 20px;
+    border: 0.2rem solid black;
+    font-size: 2rem;
     cursor: pointer;
+    border-radius: 5rem;
 }
-.title {
-    text-align:center;
-    color:white;
-    font-size: 35px;
-    font-family:'Times New Roman', Times, serif;
-    margin: 0 0 10px;
-    
+textarea {
+    border-radius: 1rem;
 }
-.descer {
-    padding-top: 80px;
+input {
+    border-radius: 1rem;
+    padding: 0.5rem;
 }
 input:focus {
-    box-shadow: 0 0 50px rgb(255,0,0);
+    box-shadow: 0 0 5rem rgb(255,0,0);
 }
 textarea:focus {
-    box-shadow: 0 0 50px rgb(255,0,0); 
+    box-shadow: 0 0 5rem rgb(255,0,0); 
 }
 ::placeholder {
     font-style: italic;
-    font-size: 15px;
+    font-size: 1.5rem;
     font-family: 'Times New Roman', Times, serif;
 }
 .posi {
-    position: absolute;
-    height: 50px;
-    top: 1700px;
-    left: 1170px;
-    box-shadow: -2px 1px 5px white;
+    position: relative;
+    height: 5rem;
+    top: 1rem;
+    left: 25rem;
+    box-shadow: 0 0 0.5rem white;
 }
 .return {
     position: fixed;
-    right: 10px;
-    bottom: 10px;
-    width: 70px;
-    height: 70px;
+    right: 1rem;
+    bottom: 1rem;
+    width: 7rem;
+    height: 7rem;
     cursor: pointer;
+    z-index: 1;
 }
 .container {
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto;
-    gap: 20px;
-    justify-content: space-around;
+    gap: 2rem;
+    justify-content: space-evenly;
     align-content: center;
 }
 .container {
-    background-color: rgba(0, 0, 0, 0.5);
-    box-shadow: 0px 0px 10px red;
+    background-color: rgba(255, 255, 255, 0.5);
 
 }
 .foto1 {
-    box-shadow: 0px 0px 10px green;
-    margin-top: 20px;
-    margin-left: 20px;
+    box-shadow: 0 0 10rem green;
+    margin-top: 2rem;
+    margin-left: 2rem;
 }
 
 .foto2 {
-    box-shadow: 0px 0px 10px green;
-    margin-top: 20px;
+    box-shadow: 0 0 1rem green;
+    margin-top: 2rem;
 }
 .foto3 {
-    box-shadow: 0px 0px 10px green;
-    margin-top: 20px;
-    margin-right: 20px;
+    box-shadow: 0 0 1rem green;
+    margin-top: 2rem;
+    margin-right: 2rem;
 }
 .foto4 {
-    box-shadow: 0px 0px 10px green;
-    margin-left: 20px;
+    box-shadow: 0 0 1rem green;
+    margin-left: 2rem;
 }
 .foto5 {
-    box-shadow: 0px 0px 10px green;
+    box-shadow: 0 0 1rem green;
 }
 .foto6 {
-    box-shadow: 0px 0px 10px green;
-    margin-right: 20px;
+    box-shadow: 0 0 1rem green;
+    margin-right: 2rem;
 }
 .fechar {
     display: none;
 }
 .foto1:target {
     position: fixed;
-    top: 50px;
-    left: 150px;
-    padding-top: 80px;
-    padding-bottom: 0px;
-    box-shadow: 0px 0px 20px red;
+    top: 5rem;
+    left: 15rem;
+    padding-top: 8rem;
+    padding-bottom: 0rem;
+    box-shadow: 0 0 2rem red;
     background-color: rgba(0, 0, 0, 0.9);
-    border-radius: 10px;
-    width: 1000px;
-    height: 500px;
+    border-radius: 1rem;
+    width: 100rem;
+    height: 50rem;
     transition: all 400ms ease-in-out;
 }
 .foto1:target .fechar {
@@ -253,15 +396,15 @@ textarea:focus {
 }
 .foto2:target {
     position: fixed;
-    top: 50px;
-    left: 150px;
-    padding-top: 80px;
-    padding-bottom: 0px;
-    box-shadow: 0px 0px 20px red;
+    top: 5rem;
+    left: 15rem;
+    padding-top: 8rem;
+    padding-bottom: 0rem;
+    box-shadow: 0 0 2rem red;
     background-color: rgba(0, 0, 0, 0.9);
-    border-radius: 10px;
-    width: 1000px;
-    height: 500px;
+    border-radius: 1rem;
+    width: 100rem;
+    height: 50rem;
     transition: all 400ms ease-in-out;
 }
 .foto2:target .fechar {
@@ -269,15 +412,15 @@ textarea:focus {
 }
 .foto3:target {
     position: fixed;
-    top: 50px;
-    left: 150px;
-    padding-top: 80px;
-    padding-bottom: 0px;
-    box-shadow: 0px 0px 20px red;
+    top: 5rem;
+    left: 15rem;
+    padding-top: 8rem;
+    padding-bottom: 0rem;
+    box-shadow: 0 0 2rem red;
     background-color: rgba(0, 0, 0, 0.9);
-    border-radius: 10px;
-    width: 1000px;
-    height: 500px;
+    border-radius: 1rem;
+    width: 100rem;
+    height: 50rem;
     transition: all 400ms ease-in-out;
 }
 .foto3:target .fechar {
@@ -285,15 +428,15 @@ textarea:focus {
 }
 .foto4:target {
     position: fixed;
-    top: 50px;
-    left: 150px;
-    padding-top: 80px;
-    padding-bottom: 0px;
-    box-shadow: 0px 0px 20px red;
+    top: 5rem;
+    left: 15rem;
+    padding-top: 8rem;
+    padding-bottom: 0rem;
+    box-shadow: 0 0 2rem red;
     background-color: rgba(0, 0, 0, 0.9);
-    border-radius: 10px;
-    width: 1000px;
-    height: 500px;
+    border-radius: 1rem;
+    width: 100rem;
+    height: 50rem;
     transition: all 400ms ease-in-out;
 }
 .foto4:target .fechar {
@@ -301,15 +444,15 @@ textarea:focus {
 }
 .foto5:target {
     position: fixed;
-    top: 50px;
-    left: 150px;
-    padding-top: 80px;
-    padding-bottom: 0px;
-    box-shadow: 0px 0px 20px red;
+    top: 5rem;
+    left: 15rem;
+    padding-top: 8rem;
+    padding-bottom: 0rem;
+    box-shadow: 0 0 2rem red;
     background-color: rgba(0, 0, 0, 0.9);
-    border-radius: 10px;
-    width: 1000px;
-    height: 500px;
+    border-radius: 1rem;
+    width: 100rem;
+    height: 50rem;
     transition: all 400ms ease-in-out;
 }
 .foto5:target .fechar {
@@ -317,15 +460,15 @@ textarea:focus {
 }
 .foto6:target {
     position: fixed;
-    top: 50px;
-    left: 150px;
-    padding-top: 80px;
-    padding-bottom: 0px;
-    box-shadow: 0px 0px 20px red;
+    top: 5rem;
+    left: 15rem;
+    padding-top: 8rem;
+    padding-bottom: 0rem;
+    box-shadow: 0 0 2rem red;
     background-color: rgba(0, 0, 0, 0.9);
-    border-radius: 10px;
-    width: 1000px;
-    height: 500px;
+    border-radius: 1rem;
+    width: 100rem;
+    height: 50rem;
     transition: all 400ms ease-in-out;
 }
 .foto6:target .fechar {
@@ -339,26 +482,26 @@ textarea:focus {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: 250px 250px;
-    gap: 0px;
+    gap: 0;
     justify-content: space-evenly;
     align-content: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 .vid {
-    box-shadow: 0px 0px 20px red;
-    border-radius: 20px;
+    box-shadow: 0px 0px 2rem red;
+    border-radius: 2rem;
 }
 .audio-container {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
-    gap: 40px;
+    gap: 4rem;
     justify-content: space-evenly;
     align-content: center;
-    padding-bottom: 30px;
+    padding-bottom: 3rem;
 }
 .aud {
-    box-shadow: 0px 0px 20px red;
-    border-radius: 25px;
+    box-shadow: 0 0 2rem red;
+    border-radius: 2.5rem;
 }
