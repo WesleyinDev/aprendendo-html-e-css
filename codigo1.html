@@ -15,25 +15,23 @@
 <body> <!-- Corpo da pagina-->
 
 
-    <!-- Primeira parte a ser modificada-->
     <div>
-        <a id="return" href="#return"><img class="return"
-                src="https://icon-library.com/images/back-to-top-icon-png/back-to-top-icon-png-0.jpg" alt="Return"></a>
+        <a id="return" href="#return"><img class="return" src="./assets/img/seta.png" alt="Return"></a>
     </div>
 
     <aside class="menu">
         <section class="main-content menu-content">
-            <h1 class="wesley">
-                <a href="#">DevWesley</a>
-            </h1>
+            <p class="wesley">
+                <a class="wesley" href="#">DevWesley</a>
+            </p>
             <nav>
                 <ul>
                     <li><a href=#return><b>Inicio</b></a></li>
                     <li><a href="https://github.com/WesleyinDev" target="_blank"><b>Meu GitHub</b></a></li>
                     <li><a href="https://www.linkedin.com/in/wesley-vieira-b416b1223/" target="_blank"><b>Meu
                                 LinkedIn</b></a></li>
-                    <li><a href="#for1"><b>Deixe um comentário</b></a></li>
                     <li><a href="#tb"><b>Dias concluidos</b></a></li>
+                    <li><a href="#for1"><b>Deixe um comentário</b></a></li>
                 </ul>
             </nav>
         </section>
@@ -52,13 +50,11 @@
                 <p>
             </section>
             <div>
-                <img src="/assets/img/me.jpg">
+                <img src="/assets/img/me.jpg" al="Eu xD">
             </div>
         </div>
     </div>
-    <!-- Primeira parte a ser modificada -->
 
-    <!-- Segunda parte a ser modificada-->
     <div class="section main-content">
         <section class="text-content-2">
             <h2>Neste site irei adicionar e comentar minhas evoluções no mundo HTML e CSS e quem sabe no futuro adições
@@ -79,14 +75,14 @@
             </p>
         </div>
     </div>
-    <!-- Segunda parte a ser modificada-->
 
-    <!-- Terceira parte a ser modificada-->
     <section class="main-content main-bg-white">
         <article class="art">
-            <h2><i>Atualizações de aprendizado:</i></h2>
+            <h2><i>Atualizações de aprendizado</i></h2>
+
             <div class="gap"></div>
             <hr>
+
             <p><b class="tx1">28/11/23:</b> Aprendizados: tags (inline), identificadores (id e class),
                 diferentes títulos (h1, h2, h3, h4, h5, h6) e um pouco sobre stylus (color, background e
                 como
@@ -292,7 +288,7 @@
                 fotos.
             </p>
             <div class="container">
-                <div class="background">
+                <div>
                     <div class="foto1" id="foto1"><a href="#foto1"><img
                                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTivU53sD1prnRshwB6rIFJjjXHh0fqUXxPZi7SSfrNmHgC2VTTbcjKHmVxY_fblO2w3lA&usqp=CAU"></a>
                         <div class="fechar"><a href="#fechar">Fechar</a></div>
@@ -444,7 +440,7 @@
         <hr>
 
         <article class="art">
-            <p><b class="tx1">14/13/23:</b>Comecei a fazer uma atualizão no site, comecei mudandoo menu do site, que
+            <p><b class="tx1">14/12/23:</b>Comecei a fazer uma atualizão no site, comecei mudandoo menu do site, que
                 não
                 tive muita dificuldade de mudar, apaguei algumas classes inuteis, adicionei fotes ao site para
                 deixar mais bonito visualmente e diferente. Também mudei o inicio do site. Ficou muito mais
@@ -456,7 +452,7 @@
         <hr>
 
         <article class="art">
-            <p><b class="tx1">15/13/23:</b> Dando continuidade ao remolde do site, fiz algerações na seção dos
+            <p><b class="tx1">15/12/23:</b> Dando continuidade ao remolde do site, fiz alterações na seção dos
                 comentarios, apliquei o mesmo esquema de limte que avia anterior porém, coerente com o resto da pagina.
                 alterei a linha de separação horizontal, estilizei a segunda seção do texto que fala sobre a proposta
                 deste projeto e por fim comecei a mexer na estilização da tabela mas não conclui, ainda temos muito a se
@@ -464,11 +460,22 @@
 
             </p>
         </article>
+
+        <div class="gap"></div>
+        <hr>
+
+        <article class="art">
+            <p><b class="tx1">16/12/23:</b> Concluir o remolde do site. Tudo atualizado !!. Mexi no codigo para remover
+                class e linhas de codigos inuteis. Tô satisfeito com esse atual resultado mas pretendo atualizar mais
+                algumas coisas no futuro, quem sabe. Agora é só dar uma relembrada no que aprendi até aqui e meter
+                marcha para o JS que é onde realmente, eu quero focar. Encerrei o dia.
+            </p>
+            </aticle>
     </section>
 
 
     <section class="main-content"> <!--Seção da tabela de dias-->
-        <divid="tb">
+        <div id="tb">
             <table class="table-content">
                 <div>
                     <caption>
@@ -509,7 +516,7 @@
                             <td class="fin"><s>NONE</s></td>
                             <td class="fin"><s>14/12/23</s></td>
                             <td class="fin"><s>15/12/23</s></td>
-                            <td>16/12/23</td>
+                            <td class="fin"><s>16/12/23</s></td>
                             <td>17/12/23</td>
                             <td>18/12/23</td>
                             <td>19/12/23</td>
@@ -574,34 +581,35 @@
             </table>
     </section>
 
-    <section>
-        <form id="for1"> <!-- Formulario de feedback -->
-            <h1>Envie-me seu feedback!!</h1>
-            <p>
-                <label for="nome">Seu nome:</label>
-                <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
-            </p>
-            <p>
-                <label for="email">Seu E-mail:</label>
-                <input type="email" id="email" name="email" placeholder="email@email.com" required>
-            </p>
-            <p>
-                <label>Você é dev?</label><br>
-                <label for="sim">Sim</label>
-                <input type="radio" id="sim" name="dev" value="sim"><br>
-                <label for="não">Não</label>
-                <input type="radio" id="não" name="dev" value="não">
-            </p>
-            <p>
-                <label for="come">Escreva seu comentário a baixo:</label><br>
-                <textarea id="come" name="come" placeholder="Deixe seu comentário" rows="10" cols="100"></textarea>
-            </p>
-            <p>
-                <button type="submit" class="button">Enviar comentário</button>
-            </p>
-        </form>
+    <section class="main-content">
+        <div class="form-container">
+            <form id="for1"> <!-- Formulario de feedback -->
+                <h1>Envie-me seu feedback!!</h1>
+                <p>
+                    <label for="nome">Seu nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                </p>
+                <p>
+                    <label for="email">Seu E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="email@email.com" required>
+                </p>
+                <p class="quest">
+                    <label>Você é dev?</label><br>
+                    <label for="sim">Sim</label>
+                    <input type="radio" id="sim" name="dev" value="sim"><br>
+                    <label for="não">Não</label>
+                    <input type="radio" id="não" name="dev" value="não">
+                </p>
+                <p>
+                    <label for="come">Escreva seu comentário a baixo:</label><br>
+                    <textarea id="come" name="come" placeholder="Deixe seu comentário" rows="10" cols="100"></textarea>
+                </p>
+                <p>
+                    <button type="submit" class="button">Enviar comentário</button>
+                </p>
+            </form>
+        </div>
     </section>
-    <!-- Terceira parte a ser modificada-->
 
 
     <div class="rodape">
