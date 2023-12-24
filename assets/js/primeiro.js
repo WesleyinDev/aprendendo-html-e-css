@@ -1,5 +1,13 @@
-let nome = prompt('Qual o seu nome?');
+const nome = prompt('Qual o seu nome?');
 alert(`Olá,${nome} seja muito bem vindo ao meu primeiro projeto!`);
+const nam = document.getElementById('name');
+const nam1 = document.getElementById('name2');
+
+
+nam.innerHTML = `<mark class="cor">${nome}</mark>`;
+nam1.innerHTML = `<mark class="cor">${nome}</mark>`;
+
+
 
 
 let idade = prompt('Qual sua idade?');
