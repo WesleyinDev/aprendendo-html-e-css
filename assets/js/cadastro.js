@@ -24,3 +24,27 @@ function cadastro (event) {
 
 }
 formuCadastro.addEventListener('submit', cadastro);
+
+function relogio () {
+    const hora = document.querySelector('.clock');
+    const data = new Date();
+
+    const horas = String(data.getHours()).padStart(2, '0');
+    const minutos = String(data.getMinutes()).padStart (2,'0');
+    const segundos = String(data.getSeconds()).padStart (2, '0');
+
+    const dia = String(data.getDate()).padStart (2,'0');
+    const mes = String(data.getMonth() + 1).padStart (2, '0');
+    const ano = data.getFullYear();
+
+    const horaAtual = `${horas}:${minutos}:${segundos}`;
+    const diaAtual = `${dia}/${mes}/${ano}`;
+
+
+    hora.innerHTML = `Horario: ${horaAtual} Data: ${diaAtual}`;
+
+}
+
+setInterval(relogio, 1000);
+
+relogio();
